@@ -208,7 +208,7 @@ public class Main {
 		          break;
 		          
 		          case 2:
-		               pq.remove ();
+		               System.out.println (pq.remove ());
 		          break;
 		          
 		          case 3:
