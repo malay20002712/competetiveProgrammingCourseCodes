@@ -103,10 +103,10 @@ class Individual {
     //Calculate fitness
     public void calcFitness() {
 
-        fitness = 0;
+        this.fitness = 0;
         for (int i = 0; i < 5; i++) {
             if (genes[i] == 1) {
-                ++fitness;
+                ++this.fitness;
             }
         }
     }
