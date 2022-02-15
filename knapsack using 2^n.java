@@ -34,7 +34,8 @@ public class Main
 	     } else if (weight [n - 1] > W) {
 	          return knapSack (weight, values, W, n - 1);
 	     } else {
-	          return Math.max (values [n - 1] + knapSack (weight, values, W - weight [n - 1], n - 1), knapSack (weight, values, W, n - 1));
+	          return Math.max (values [n - 1] + knapSack (weight, values, W - weight [n - 1], n - 1), 
+				   knapSack (weight, values, W, n - 1));
 	     }
 	     
 	}
