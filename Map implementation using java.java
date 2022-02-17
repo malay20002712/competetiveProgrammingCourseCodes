@@ -102,11 +102,12 @@ public class Main_class {
      
      public static void main (String [] args) throws Exception {
           
-          Map <Integer, Integer> map = 
-        		  new HashMap <Integer, Integer> ();
-          map.put (1, 1);
-          map.put (2, 1);
-          map.put (3, 1);
+	  BufferedReader br = new BufferedReader (new InputStreamReader (System.in));
+          Map <String, Integer> map = 
+        		  new HashMap <> ();
+          for (int i = 0; i < 4; i++) {
+               map.put (br.readLine (), Integer.parseInt (br.readLine ()));
+          }
           map.getMapElements ();
           
      }
