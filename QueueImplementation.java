@@ -33,10 +33,16 @@ class Queue <E> {
 	}
 	
 	public E remove () {
-		E d = head.data;
-		head = head.next;
-		--size;
-		return d;
+		
+		if (!isEmpty ()) {
+		   E d = head.data;
+		   head = head.next;
+		   --size;
+		   return d;
+		} else {
+		    return null;
+		}
+		
 		
 	}
 	
@@ -64,7 +70,10 @@ class Queue <E> {
 	}
 	
 	public E peek () {
-	     return head.data;
+	     if (!isEmpty ())
+	     	return head.data;
+	     else 
+		 return null;
 	}
 	
 }
