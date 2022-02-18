@@ -65,7 +65,7 @@ class Stack <E> {
 	}
 	
 	public E peek () {
-	     return head.data;
+	     return (!isEmpty ()) ? head.data : null;
 	}
 	
 }
