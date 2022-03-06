@@ -13,9 +13,6 @@ class GFG
     	    int n = Integer.parseInt (br.readLine ());
     	    for (int i = 1; i <= n; i++) {
     	        
-    	        int sum = ;
-    	        int multiplySum = ;
-    	        
     	        if (gcd (findQuadraticSum (i), multiplySum (i)) > 1) {
     	            c++;
     	        }
